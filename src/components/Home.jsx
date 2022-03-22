@@ -2,7 +2,7 @@ import React from 'react'
 import './forHome.css'
 const Home = () => {
     return (
-        <section className="view bg-light">
+        <section className="view">
 
             <div className="row">
 
