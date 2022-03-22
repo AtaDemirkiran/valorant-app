@@ -27,7 +27,7 @@ const Weapons = () => {
                                         <div className="avatar white d-flex justify-content-center align-items-center">
                                             <img
                                                 src={weapon.displayIcon}
-                                                className="img-fluid"
+                                                className="img-fluid mt-4"
                                                 alt='foto'
                                             />
                                         </div>
