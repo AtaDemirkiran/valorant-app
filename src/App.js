@@ -7,7 +7,7 @@ import Maps from './components/Maps';
 function App() {
   return (
     <Router> 
-      <div>
+      <div className='bg-light'>
           <Navbar/>
             <Routes>
               <Route path='/' element={<Home/>} />

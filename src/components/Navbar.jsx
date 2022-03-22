@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <div className="container">
 
-                <h4 className='h4' style={{ color }}>VALORANT APP</h4>
+                <h4 className='h4 pt-2' style={{ color }}>VALORANT APP</h4>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor: color }}>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 </button>
 
                 <div className="collapse navbar-collapse ml-5" id="basicExampleNav">
-                    <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav mr-auto font-weight-bold">
                         <li className="nav-item ml-3 mt-1">
                             <Link style={{ color }} to={'/'}>Home</Link>
                         </li>

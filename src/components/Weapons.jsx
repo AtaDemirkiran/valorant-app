@@ -14,7 +14,7 @@ const Weapons = () => {
         fetchWeapon()
     }, [])
     return (
-        <div className="container my-5">
+        <div className="container my-5 h-100">
             <section className="p-md-3 mx-md-5 text-center text-lg-left">
                 <h2 className="text-center mx-auto font-weight-bold mb-5 pb-2">WEAPONS</h2>
                 <div className="row">
