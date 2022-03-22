@@ -28,6 +28,7 @@ const Weapons = () => {
                                             <img
                                                 src={weapon.displayIcon}
                                                 className="img-fluid"
+                                                alt='foto'
                                             />
                                         </div>
                                         <div className="card-body">
