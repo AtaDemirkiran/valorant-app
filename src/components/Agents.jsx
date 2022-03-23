@@ -27,7 +27,7 @@ const Agents = () => {
                         agents.map(agent => {
                             return (
                                 <div className="col-lg-4 col-md-12 mb-4 " key={agent.uuid}>
-                                    <div className="card testimonial-card" style={{ backgroundImage: `url(${agent.bustPortrait})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                                    <div className="card testimonial-card" style={{ backgroundImage: `url(${agent.background})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                                         <div className="avatar mx-auto mt-2 ">
                                             <img src={agent.displayIcon} className="rounded-circle" style={{ maxWidth: '65%' }} />
                                         </div>

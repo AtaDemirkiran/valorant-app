@@ -6,9 +6,9 @@ const Home = () => {
 
             <div className="row">
 
-                <div className="col-md-6">
+                <div className="col-md-12 col-lg-6">
 
-                    <div className="d-flex flex-column justify-content-center align-items-left h-100 ">
+                    <div className="d-flex flex-column justify-content-center align-items-center h-100 ">
                         <h1 className="heading">Discover Valorant</h1>
                         <h4 className="subheading font-weight-bold">World's most popular framework for building responsive, mobile-first websites and apps</h4>
                         <div className="mr-auto">
@@ -18,7 +18,7 @@ const Home = () => {
 
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-md-12 col-lg-6">
 
                     <div className="view">
                         <img src="https://media.valorant-api.com/agents/5f8d3a7f-467b-97f3-062c-13acf203c006/bustportrait.png" className="img-fluid" alt="smaple image" />
