@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="col-md-12 col-lg-6">
 
                     <div className="d-flex flex-column justify-content-center align-items-center h-100 ">
-                        <h1 className="heading">Discover Valorant</h1>
+                        <h1 className="heading mt-4">Discover Valorant</h1>
                         <h4 className="subheading font-weight-bold">World's most popular framework for building responsive, mobile-first websites and apps</h4>
                         <div className="mr-auto">
                             <button type="button" className="btn btn-lily btn-margin btn-rounded">Get started <i className="fas fa-caret-right ml-3"></i></button>

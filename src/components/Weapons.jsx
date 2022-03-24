@@ -30,6 +30,8 @@ const Weapons = () => {
                                                 className="img-fluid mt-4"
                                                 alt='foto'
                                             />
+
+
                                         </div>
                                         <div className="card-body">
                                             <p className="font-weight-bold my-2"> {weapon.displayName} </p>

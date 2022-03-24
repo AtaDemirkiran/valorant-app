@@ -7,15 +7,15 @@ import Maps from './components/Maps';
 function App() {
   return (
     <Router> 
-      {/* <div className='bg-light'> */}
           <Navbar/>
+
             <Routes>
               <Route path='/' element={<Home/>} />
               <Route path='/agents' element={<Agents/>} />
               <Route path='/maps' element={<Maps/>} />
               <Route path='/weapons' element={<Weapons/>}/>
             </Routes>
-      {/* </div> */}
+            
     </Router>
   );
 }
