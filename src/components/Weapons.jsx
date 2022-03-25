@@ -24,7 +24,7 @@ const Weapons = () => {
                             return (
                                 <div className="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch" key={weapon.uuid}>
                                     <div className="card">
-                                        <div className="avatar white d-flex justify-content-center align-items-center">
+                                        <div className="white d-flex justify-content-center align-items-center card-img-top">
                                             <img
                                                 src={weapon.displayIcon}
                                                 className="img-fluid mt-4"
