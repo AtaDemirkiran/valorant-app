@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import './forAgents.css'
+// import './forAgents.css'
+import '../App.scss'
 
 const Agent = ({ agent }) => {
     const [visible, setVisible] = useState(false)
@@ -7,14 +8,14 @@ const Agent = ({ agent }) => {
         // <div className="container my-5 h-100" >
         <div className="col-md-4 mt-5">
             <div className="card profile-card-1">
-                <img src={agent.fullPortraitV2} alt="profile-sample1" className="background " style={{ paddingTop: '100px' }} />
+                <img src={agent.fullPortraitV2} alt="profile-sample1" className="background " />
                 <img src={agent.displayIcon} className="profile" alt="profile" />
                 <div className="card-content">
                     <h2 className='font-weight-bold mt-1'> {agent.displayName} </h2>
                     <button type='button' className='btn btn-dark' onClick={() => { setVisible(!visible) }}> {!visible ? 'Show Detail' : 'Hide Detail'} </button>
                     {
                         visible ?
-                            <div className='container mt-3' style={{ backgroundColor: '#ff4a59', color: '#18142f' }} >
+                            <div className='container mt-3 agent-description'>
                                 {agent.description}
                             </div>
                             : null

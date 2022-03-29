@@ -1,5 +1,6 @@
 import React from 'react'
-import './forHome.css'
+// import './forHome.css'
+import '../App.scss'
 const Home = () => {
     return (
         <section className="view">
@@ -12,7 +13,7 @@ const Home = () => {
                         <h1 className="heading mt-4">Discover Valorant</h1>
                         <h4 className="subheading font-weight-bold">World's most popular framework for building responsive, mobile-first websites and apps</h4>
                         <div className="mr-auto">
-                            <button type="button" className="btn btn-lily btn-margin btn-rounded">Get started <i className="fas fa-caret-right ml-3"></i></button>
+                            <button type="button" className="btn btn-lily btn-margin btn-rounded">Get started <i className="fa fa-caret-right"></i></button>
                         </div>
                     </div>
 
