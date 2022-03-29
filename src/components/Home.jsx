@@ -1,5 +1,5 @@
 import React from 'react'
-// import './forHome.css'
+import { Link } from 'react-router-dom'
 import '../App.scss'
 const Home = () => {
     return (
@@ -13,7 +13,10 @@ const Home = () => {
                         <h1 className="heading mt-4">Discover Valorant</h1>
                         <h4 className="subheading font-weight-bold">World's most popular framework for building responsive, mobile-first websites and apps</h4>
                         <div className="mr-auto">
-                            <button type="button" className="btn btn-lily btn-margin btn-rounded">Get started <i className="fa fa-caret-right"></i></button>
+                            <Link to='/agents'>
+                                <button type="button" className="btn btn-lily btn-margin btn-rounded">Get started <i className="fa fa-caret-right"></i></button>
+                            </Link>
+
                         </div>
                     </div>
 
