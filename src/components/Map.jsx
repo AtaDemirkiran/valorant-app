@@ -17,7 +17,7 @@ const Map = ({ map }) => {
 
                     <button type='button' className='btn btn-danger' onClick={() => setVisible(!visible)}>Click to see corordinates</button>
                     {
-                        visible ? <p className='mt-2'> For {map.displayName} : {map.coordinates} </p> : null
+                        visible ? <p className='mt-2'> For {map.displayName} : {map.coordinates} </p> : <p></p>
                     }
                 </div>
             </div>

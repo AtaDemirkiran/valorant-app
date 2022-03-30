@@ -126,7 +126,34 @@ body::-webkit-scrollbar {
             text-decoration: none;
          }
      }
-
     
  }
 
+ 
+
+//  --------PHONE TABLET ---------
+ @media (max-width: 768px){
+    .agent-detail{
+        font-size: 20px;
+         .agent-about{
+             margin-top:30px;
+         }
+         .agent-baslik{
+             margin-left:2%;
+             font-size:50px;
+         }
+          
+    }
+}
+// -------- LAPTOP ---- BİG SCREEN
+ @media (min-width: 768px){
+     .agent-detail{
+
+         .agent-img{
+            height:500px;
+         }
+         .agent-description{
+            font-size: 18px;
+        }
+     }
+ }
