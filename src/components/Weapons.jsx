@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 const Weapons = () => {
 
+
     const [weapons, setWeapons] = useState([])
 
     const fetchWeapon = async () => {
@@ -31,10 +32,11 @@ const Weapons = () => {
                                                 alt='foto'
                                             />
 
-
                                         </div>
                                         <div className="card-body">
+
                                             <p className="font-weight-bold my-2"> {weapon.displayName} </p>
+
                                         </div>
                                     </div>
                                 </div>

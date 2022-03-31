@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 const AgentDetail = () => {
     let { uuid } = useParams()
@@ -13,11 +12,16 @@ const AgentDetail = () => {
     }
     useEffect(() => {
         fetchAgent()
-    }, [])
+    }, [setAgent])
     return (
         <div className="container mt-5">
 
             <section className="dark-grey-text agent-detail">
+
+                <Link to='/agents'>
+                    <button type='button' className='btn back-button'><i className="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
+                </Link>
+
                 <div className="row align-items-center">
 
                     <div className="col-lg-5">
