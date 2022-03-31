@@ -2,37 +2,42 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 
-
-
 body::-webkit-scrollbar {
     overflow-y: auto;
-    width:0px;  
+    width: 0px;
     background-color: #000;
 }
+
 // Home part
 .view {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
+
+    /* Hide horizontal scrollbar */
     .hm-gradient {
-        background: linear-gradient(40deg, rgba(0,51,199,.3), rgba(209,149,249,.3));
+        background: linear-gradient(40deg, rgba(0, 51, 199, .3), rgba(209, 149, 249, .3));
     }
+
     .heading {
         margin: 0 6rem;
         font-size: 3.8rem;
         font-weight: 700;
         color: #5d4267;
-      }
-      .subheading {
+    }
+
+    .subheading {
         margin: 2.5rem 6rem;
         color: #bcb2c0;
-      }
-      .btn.btn-margin {
+    }
+
+    .btn.btn-margin {
         margin-left: 6rem;
         margin-top: 3rem;
-      }
-      .btn.btn-lily {
-        background: linear-gradient(40deg, rgba(0,51,199,.7), rgba(209,149,249,.7));
+    }
+
+    .btn.btn-lily {
+        background: linear-gradient(40deg, rgba(0, 51, 199, .7), rgba(209, 149, 249, .7));
         color: #fff;
-      }
+    }
 }
 
 
@@ -57,9 +62,9 @@ body::-webkit-scrollbar {
         filter: blur(3px);
         -webkit-transform: scale(1.8);
         transform: scale(2.8);
-     }
+    }
 
-     .card-content {
+    .card-content {
         width: 100%;
         padding: 15px 25px;
         border-radius: 10px 10px;
@@ -67,16 +72,16 @@ body::-webkit-scrollbar {
         position: absolute;
         left: 0;
         top: 40%;
-        
-        .agent-description{
+
+        .agent-description {
             border-radius: 10px;
-            background-color:#ff4a59 ;
-            color:#18142f;
+            background-color: #ff4a59;
+            color: #18142f;
         }
 
-     }
+    }
 
-     .profile {
+    .profile {
         border-radius: 50%;
         position: absolute;
         bottom: 65%;
@@ -87,9 +92,9 @@ body::-webkit-scrollbar {
         border: 2px solid rgba(255, 255, 255, 1);
         -webkit-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
-     }
+    }
 
-     h2 {
+    h2 {
         margin: 0 0 5px;
         font-weight: 600;
         font-size: 25px;
@@ -98,10 +103,10 @@ body::-webkit-scrollbar {
             display: block;
             font-size: 15px;
             margin-top: 10px;
-         }
-     }
+        }
+    }
 
-     i {
+    i {
         display: inline-block;
         font-size: 16px;
         color: #ffffff;
@@ -113,71 +118,93 @@ body::-webkit-scrollbar {
         border-radius: 50%;
         margin: 0 5px;
 
-        &:hover{
+        &:hover {
             background-color: #fff;
             color: #2e3434;
             text-decoration: none;
         }
-     }
+    }
 
-     .icon-block {
+    .icon-block {
         float: left;
         width: 100%;
         margin-top: 15px;
+
         a {
             text-decoration: none;
-         }
-     }
-    
- }
+        }
+    }
 
- %btn-shared {
+}
+
+%btn-shared {
     font-weight: bold;
     color: #fff;
-    background-color:#17132e;
-    &:hover{
+    background-color: #17132e;
+
+    &:hover {
         color: #000;
         background-color: #ff4a59;
-        transition: 0.4s ease ;
+        transition: 0.4s ease;
     }
- }
-
- .back-button{
-    width: 100px;
-    @extend %btn-shared; 
 }
- 
+
+.back-button {
+    width: 100px;
+    @extend %btn-shared;
+}
+
 
 //  --------PHONE TABLET ---------
- @media (max-width: 768px){
-    .agent-detail{
+@media (max-width: 768px) {
+    .agent-detail {
         font-size: 20px;
-         .agent-about{
-             margin-top:30px;
-         }
-         .agent-baslik{
-             margin-left:2%;
-             font-size:50px;
-         }
-         .back-button{
-             width:80px;
-             font-weight: normal;
-         }
-          
+
+        .agent-about {
+            margin-top: 30px;
+        }
+
+        .agent-baslik {
+            margin-left: 2%;
+            font-size: 50px;
+        }
+
+        .back-button {
+            width: 80px;
+            font-weight: normal;
+        }
+
     }
 }
-// -------- LAPTOP ---- BİG SCREEN
- @media (min-width: 768px){
-     .agent-detail{
 
-         .agent-img{
-            height:500px;
-         }
-         .agent-description{
+// -------- LAPTOP ---- BİG SCREEN
+@media (min-width: 768px) {
+    .agent-detail {
+
+        .agent-img {
+            height: 500px;
+        }
+
+        .agent-description {
             font-size: 18px;
         }
-     }
- }
+    }
+}
+
 .detail-button {
     @extend %btn-shared
+}
+
+.navbar {
+    background-color: #ff4a59;
+
+    .navbar-toggler {
+        background-color: #17132e;
+    }
+
+    .navbarItem {
+        color: #18142f;
+        text-decoration: none;
+    }
+
 }
