@@ -15,9 +15,9 @@ const Map = ({ map }) => {
                 <div className="card-body">
                     <p className="mb-1 font-weight-bold h4">{map.displayName}</p>
 
-                    <button type='button' className='btn btn-danger' onClick={() => setVisible(!visible)}>Click to see corordinates</button>
+                    <button type='button' className='btn map-button' onClick={() => setVisible(!visible)}>Click to see corordinates</button>
                     {
-                        visible ? <p className='mt-2'> For {map.displayName} : {map.coordinates} </p> : <p></p>
+                        visible ? <p className='map-detail'> For {map.displayName} : {map.coordinates} </p> : <p></p>
                     }
                 </div>
             </div>

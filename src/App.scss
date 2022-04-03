@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 
+
 body::-webkit-scrollbar {
     overflow-y: auto;
     width: 0px;
@@ -175,6 +176,11 @@ body::-webkit-scrollbar {
         }
 
     }
+
+    .map-detail {
+        margin-top: 15px;
+    }
+
 }
 
 // -------- LAPTOP ---- BİG SCREEN
@@ -189,10 +195,23 @@ body::-webkit-scrollbar {
             font-size: 18px;
         }
     }
+
+    .map-button {
+        margin-top: 10px;
+    }
+
+    .map-detail {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+.map-button {
+    @extend %btn-shared;
 }
 
 .detail-button {
-    @extend %btn-shared
+    @extend %btn-shared;
 }
 
 .navbar {
