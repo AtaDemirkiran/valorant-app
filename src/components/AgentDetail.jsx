@@ -6,6 +6,7 @@ const AgentDetail = () => {
     let { uuid } = useParams()
 
     const [agent, setAgent] = useState([])
+
     const fetchAgent = async () => {
         const response = await axios.get(`https://valorant-api.com/v1/agents/${uuid}`)
         setAgent(response.data.data)
